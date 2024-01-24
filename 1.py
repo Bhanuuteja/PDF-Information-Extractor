@@ -7,7 +7,7 @@ from tabulate import tabulate
 nlp = spacy.load("en_core_web_sm")
 
 def extract_information_from_pdf(pdf_path, keywords):
-    # ... (rest of your code)
+    # ... (Implementation of information extraction logic using fitz and spaCy)
 
 # Streamlit interface
 st.title("PDF Information Extractor")

@@ -7,28 +7,7 @@ from tabulate import tabulate
 nlp = spacy.load("en_core_web_sm")
 
 def extract_information_from_pdf(pdf_path, keywords):
-    doc = fitz.open(pdf_path)
-    text = ""
-
-    for page_num in range(doc.page_count):
-        page = doc[page_num]
-        text += page.get_text()
-
-    # Process the text using spaCy
-    doc = nlp(text)
-
-    # Dictionary to store relevant information organized by keyword
-    keyword_info = {}
-
-    # Iterate through sentences to find relevant information
-    for keyword in keywords:
-        keyword_info[keyword] = []
-
-        for sentence in doc.sents:
-            if keyword.lower() in sentence.text.lower():
-                keyword_info[keyword].append({"Context": sentence.text})
-
-    return keyword_info
+    # ... (rest of your code)
 
 # Streamlit interface
 st.title("PDF Information Extractor")

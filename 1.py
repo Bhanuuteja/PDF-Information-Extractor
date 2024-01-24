@@ -9,6 +9,8 @@ nlp = spacy.load("en_core_web_sm")
 def extract_information_from_pdf(pdf_path, keywords):
     # ... (rest of your code)
 
+# Streamlit interface
+st.title("PDF Information Extractor")
 
 # Upload PDF file
 pdf_file = st.file_uploader("Upload PDF file", type=["pdf"])

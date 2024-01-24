@@ -1,5 +1,4 @@
 import streamlit as st
-from google.colab import files
 import fitz  # PyMuPDF
 import spacy
 from tabulate import tabulate
